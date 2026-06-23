@@ -131,6 +131,8 @@ export const Container = styled.section`
   }
 
   @media (max-width: 540px) {
+    padding: 44px 0 28px;
+
     .profile-card,
     .highlights div {
       grid-template-columns: 1fr;

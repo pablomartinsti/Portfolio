@@ -2,19 +2,29 @@ import React from 'react';
 import { Container } from './styles';
 import node from '../../assets/node-js.png';
 import typescript from '../../assets/typescript.png';
+import express from '../../assets/express.png';
 import postgres from '../../assets/postgres.png';
 import mongodb from '../../assets/mongodb.png';
 import docker from '../../assets/docker.png';
 import git from '../../assets/git.png';
+import github from '../../assets/github.png';
 import { profile } from '../../data/profile';
+import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
+import { vscDarkPlus } from 'react-syntax-highlighter/dist/esm/styles/prism';
 
-const techs = [
-  ['Node.js', node],
-  ['TypeScript', typescript],
-  ['PostgreSQL', postgres],
-  ['MongoDB', mongodb],
-  ['Docker', docker],
-  ['Git', git],
+const techs: Array<{
+  name: string;
+  icons?: string[];
+  badge?: string;
+}> = [
+  { name: 'Node.js', icons: [node] },
+  { name: 'TypeScript', icons: [typescript] },
+  { name: 'Express', icons: [express] },
+  { name: 'PostgreSQL', icons: [postgres] },
+  { name: 'MongoDB', icons: [mongodb] },
+  { name: 'Docker', icons: [docker] },
+  { name: 'Git', icons: [git] },
+  { name: 'GitHub', icons: [github] },
 ];
 
 function Start() {
@@ -52,17 +62,31 @@ function Start() {
             <span />
             <span />
           </div>
-          <pre>
-            <code>{`const server = express();
+
+          <SyntaxHighlighter
+            language="javascript"
+            style={vscDarkPlus}
+            customStyle={{
+              margin: 0,
+              padding: 0,
+              background: 'transparent',
+              fontSize: '15px',
+              fontFamily: 'Consolas, Monaco, monospace',
+            }}
+            showLineNumbers={false}
+          >
+            {`const server = express();
 
 server.get('/api/hello', (req, res) => {
   return res.status(200).json({
-    message: 'API rodando com sucesso!'
+    message: 'Olá! Bem-vindo ao meu portfólio 🚀'
   });
 });
 
-server.listen(process.env.PORT || 3000);`}</code>
-          </pre>
+server.listen(process.env.PORT || 3000, () => {
+  console.log('API rodando com sucesso!');
+});`}
+          </SyntaxHighlighter>
         </div>
       </section>
 
@@ -86,9 +110,26 @@ server.listen(process.env.PORT || 3000);`}</code>
       </section>
 
       <section className="tech-strip" aria-label="Tecnologias principais">
-        {techs.map(([name, icon]) => (
+        {techs.map(({ name, icons, badge }) => (
           <div key={name}>
-            <img src={icon} alt="" />
+            {icons ? (
+              <span
+                className={
+                  icons.length > 1
+                    ? 'tech-icons tech-icons--stacked'
+                    : 'tech-icons'
+                }
+                aria-hidden="true"
+              >
+                {icons.map((icon) => (
+                  <img key={icon} src={icon} alt="" />
+                ))}
+              </span>
+            ) : (
+              <span className="tech-badge" aria-hidden="true">
+                {badge}
+              </span>
+            )}
             <span>{name}</span>
           </div>
         ))}

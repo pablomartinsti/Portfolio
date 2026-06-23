@@ -101,26 +101,19 @@ export const Container = styled.section`
   }
 
   footer {
-    align-items: center;
     border-top: 1px solid rgba(148, 163, 184, 0.12);
     color: #96a3b5;
-    display: flex;
-    justify-content: space-between;
-    gap: 18px;
     margin-top: 42px;
     padding-top: 24px;
+    text-align: center;
   }
 
-  footer strong {
-    color: #f8fafc;
-    display: block;
-  }
-
-  footer span,
   footer p {
     color: #96a3b5;
-    font-size: 13px;
-    margin: 0;
+    font-size: 14px;
+    line-height: 1.6;
+    margin: 0 auto;
+    max-width: 100%;
   }
 
   @media (max-width: 780px) {
@@ -131,11 +124,6 @@ export const Container = styled.section`
 
     .contact-action {
       width: 100%;
-    }
-
-    footer {
-      align-items: flex-start;
-      flex-direction: column;
     }
   }
 `;

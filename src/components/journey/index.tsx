@@ -4,16 +4,13 @@ import { profile } from '../../data/profile';
 
 const timeline = [
   [
-    '2022',
-    'Início dos estudos em desenvolvimento web e lógica de programação.',
+    '2024',
+    'Início da jornada na programação através do DevClub FullStack PRO.',
   ],
+  ['2025', 'Ingresso no curso de Engenharia de Software na Anhanguera.'],
   [
-    '2023',
-    'Aprofundamento em Node.js, bancos de dados e construção de APIs REST.',
-  ],
-  [
-    '2024 - Atual',
-    'Desenvolvimento de projetos completos, estudos de boas práticas, arquitetura e deploy.',
+    '2026',
+    'Cursando o 4º período de Engenharia de Software, participando de bootcamps e cursos complementares na DIO, além do desenvolvimento de projetos com foco em Backend.',
   ],
 ];
 

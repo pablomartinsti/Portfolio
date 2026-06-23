@@ -69,11 +69,10 @@ function Contact() {
       </div>
 
       <footer>
-        <div>
-          <strong>{profile.shortName}</strong>
-          <span>{profile.role}</span>
-        </div>
-        <p>Portfolio backend em Node.js, TypeScript e bancos de dados.</p>
+        <p>
+          © {new Date().getFullYear()} {profile.shortName}. Todos os direitos
+          reservados.
+        </p>
       </footer>
     </Container>
   );

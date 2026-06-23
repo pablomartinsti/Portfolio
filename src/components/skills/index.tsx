@@ -17,12 +17,12 @@ const groups = [
   {
     title: 'Banco de dados',
     icon: 'DB',
-    items: ['PostgreSQL', 'Prisma ORM', 'MongoDB', 'MongoDB Compass', 'Neon'],
+    items: ['PostgreSQL', 'MongoDB', 'Prisma ORM', 'Mongoose'],
   },
   {
     title: 'DevOps e ferramentas',
     icon: 'OPS',
-    items: ['Docker', 'Git', 'GitHub', 'Render', 'HTTPie'],
+    items: ['Docker', 'Git', 'GitHub', 'Render', 'Neon', 'HTTPie'],
   },
   {
     title: 'Front que entendo',

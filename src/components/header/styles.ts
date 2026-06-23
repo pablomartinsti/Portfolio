@@ -59,7 +59,7 @@ export const Container = styled.header`
     background: rgba(57, 209, 106, 0.12);
   }
 
-  @media (max-width: 960px) {
+  @media (max-width: 1080px) {
     grid-template-columns: 1fr auto auto;
     padding: 0 18px;
 
@@ -94,7 +94,7 @@ export const Nav = styled.nav<NavProps>`
     color: #39d16a;
   }
 
-  @media (max-width: 960px) {
+  @media (max-width: 1080px) {
     position: absolute;
     left: 14px;
     right: 14px;
@@ -132,7 +132,7 @@ export const MenuButton = styled.button`
     border-radius: 2px;
   }
 
-  @media (max-width: 960px) {
+  @media (max-width: 1080px) {
     display: inline-flex;
   }
 `;
