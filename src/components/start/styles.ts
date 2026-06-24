@@ -261,6 +261,10 @@ export const Container = styled.section`
       max-width: 100%;
       padding: 20px;
       width: 100%;
+
+      .language-javascript {
+        font-size: 25px !important;
+      }
     }
 
     .window-dots {
@@ -274,7 +278,7 @@ export const Container = styled.section`
     }
 
     p {
-      font-size: 17px;
+      font-size: 25px;
       line-height: 1.75;
       margin-inline: auto;
       max-width: 100%;
@@ -288,7 +292,7 @@ export const Container = styled.section`
 
     .hero-actions a {
       flex: 1 1 150px;
-      font-size: 16px;
+      font-size: 22px;
       min-height: 52px;
       text-align: center;
     }
@@ -298,12 +302,12 @@ export const Container = styled.section`
     }
 
     .quick-facts strong {
-      font-size: 16px;
+      font-size: 25px;
     }
 
     .quick-facts span,
     .tech-strip span {
-      font-size: 14px;
+      font-size: 22px;
     }
   }
 
@@ -312,10 +316,6 @@ export const Container = styled.section`
 
     .hero-grid {
       gap: 28px;
-    }
-
-    p {
-      margin-top: 18px;
     }
 
     .hero-actions {
@@ -392,7 +392,6 @@ export const Container = styled.section`
     }
 
     p {
-      font-size: 16px;
       line-height: 1.72;
       margin-top: 16px;
     }
@@ -445,23 +444,12 @@ export const Container = styled.section`
       font-size: clamp(35px, 9.8vw, 40px);
     }
 
-    p {
-      font-size: 15.5px;
-      line-height: 1.7;
-    }
-
     .hero-actions a {
       min-height: 46px;
     }
 
     .code-panel {
       max-height: 232px;
-    }
-  }
-
-  @media (max-width: 360px) {
-    .quick-facts {
-      grid-template-columns: 1fr;
     }
   }
 

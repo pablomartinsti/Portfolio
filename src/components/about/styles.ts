@@ -167,11 +167,11 @@ export const Container = styled.section`
     }
 
     .profile-card strong {
-      font-size: 18px;
+      font-size: 30px;
     }
 
     .profile-card span {
-      font-size: 14px;
+      font-size: 20px;
     }
 
     .about-copy p,
