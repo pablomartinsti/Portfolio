@@ -151,20 +151,18 @@ export const Container = styled.section`
     }
   }
 
-  @media (max-width: 620px) {
+  @media (max-width: 680px) {
     .highlights {
       grid-template-columns: 1fr;
     }
-  }
-
-  @media (max-width: 540px) {
-    padding: 44px 0 28px;
-
-    .profile-card,
-    .highlights div {
-      grid-template-columns: 1fr;
-      text-align: center;
+    .profile-card strong {
+      font-size: 25px;
     }
+
+    .profile-card span {
+      font-size: 20px;
+    }
+    padding: 44px 0 28px;
 
     .profile-card strong {
       font-size: 30px;
