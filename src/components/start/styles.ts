@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Container = styled.section`
-  min-height: 100vh;
+  min-height: auto;
   padding: 126px 0 44px;
 
   .hero-grid {
@@ -25,7 +25,7 @@ export const Container = styled.section`
 
   h1 {
     color: #f8fafc;
-    font-size: clamp(42px, 7vw, 30px);
+    font-size: clamp(42px, 7vw, 76px);
     line-height: 1.04;
     max-width: 720px;
   }
