@@ -54,7 +54,7 @@ export const Container = styled.section`
   .contact-list {
     display: grid;
     gap: 14px;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-columns: repeat(4, minmax(0, 1fr));
     margin-top: 20px;
   }
 
@@ -116,14 +116,29 @@ export const Container = styled.section`
     max-width: 100%;
   }
 
-  @media (max-width: 780px) {
-    .contact-card,
+  @media (max-width: 768px) {
     .contact-list {
-      grid-template-columns: 1fr;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 1.75;
     }
 
     .contact-action {
+      font-size: 16px;
       width: 100%;
+    }
+
+    .contact-list strong {
+      font-size: 15px;
+    }
+
+    .contact-list small,
+    footer p {
+      font-size: 14px;
+      line-height: 1.65;
     }
   }
 `;

@@ -5,10 +5,10 @@ export const Container = styled.section`
   padding: 126px 0 44px;
 
   .hero-grid {
-    display: grid;
-    grid-template-columns: minmax(0, 1fr) minmax(360px, 0.9fr);
     align-items: center;
+    display: grid;
     gap: 56px;
+    grid-template-columns: minmax(0, 1fr) minmax(360px, 0.9fr);
   }
 
   .hero-copy {
@@ -25,7 +25,7 @@ export const Container = styled.section`
 
   h1 {
     color: #f8fafc;
-    font-size: clamp(42px, 7vw, 76px);
+    font-size: clamp(42px, 4vw, 55px);
     line-height: 1.04;
     max-width: 720px;
   }
@@ -90,6 +90,9 @@ export const Container = styled.section`
     box-shadow:
       0 24px 80px rgba(0, 0, 0, 0.45),
       0 0 32px rgba(56, 189, 248, 0.08);
+    .language-javascript {
+      font-size: 17px !important;
+    }
   }
 
   .window-dots {
@@ -99,9 +102,9 @@ export const Container = styled.section`
   }
 
   .window-dots span {
-    width: 12px;
-    height: 12px;
     border-radius: 999px;
+    height: 12px;
+    width: 12px;
   }
 
   .window-dots span:nth-child(1) {
@@ -134,7 +137,7 @@ export const Container = styled.section`
     border-top: 1px solid rgba(148, 163, 184, 0.12);
     display: grid;
     gap: 16px;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, minmax(0, 1fr));
     margin-top: 44px;
     padding: 22px 0;
   }
@@ -173,8 +176,8 @@ export const Container = styled.section`
     display: inline-flex;
     gap: 9px;
     justify-content: center;
-    min-width: 132px;
     min-height: 58px;
+    min-width: 132px;
     padding: 10px 14px;
   }
 
@@ -221,20 +224,94 @@ export const Container = styled.section`
     font-weight: 700;
   }
 
-  @media (max-width: 920px) {
-    padding: 96px 0 28px;
-
-    .hero-grid,
-    .quick-facts {
-      grid-template-columns: 1fr;
+  @media (max-width: 1180px) {
+    .hero-grid {
+      gap: 38px;
+      grid-template-columns: minmax(0, 1fr) minmax(320px, 0.78fr);
     }
+
+    .tech-strip {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      justify-content: stretch;
+    }
+
+    .tech-strip div {
+      min-width: 0;
+      width: 100%;
+    }
+  }
+
+  @media (max-width: 1080px) {
+    padding: 112px 0 36px;
 
     .hero-grid {
       gap: 28px;
+      grid-template-columns: 1fr;
+    }
+
+    .hero-copy {
+      margin-inline: auto;
+      max-width: 100%;
+      width: 100%;
     }
 
     .code-panel {
-      order: -1;
+      margin-inline: auto;
+      max-width: 100%;
+      padding: 20px;
+      width: 100%;
+    }
+
+    .window-dots {
+      margin-bottom: 14px;
+    }
+
+    h1 {
+      font-size: clamp(48px, 7.2vw, 68px);
+      margin-inline: auto;
+      max-width: 100%;
+    }
+
+    p {
+      font-size: 17px;
+      line-height: 1.75;
+      margin-inline: auto;
+      max-width: 100%;
+    }
+
+    .hero-actions {
+      justify-content: space-between;
+      margin-inline: auto;
+      max-width: 100%;
+    }
+
+    .hero-actions a {
+      flex: 1 1 150px;
+      font-size: 16px;
+      min-height: 52px;
+      text-align: center;
+    }
+
+    .quick-facts {
+      margin-top: 36px;
+    }
+
+    .quick-facts strong {
+      font-size: 16px;
+    }
+
+    .quick-facts span,
+    .tech-strip span {
+      font-size: 14px;
+    }
+  }
+
+  @media (max-width: 920px) {
+    padding: 96px 0 28px;
+
+    .hero-grid {
+      gap: 28px;
     }
 
     p {
@@ -246,40 +323,151 @@ export const Container = styled.section`
     }
 
     .quick-facts {
-      margin-top: 30px;
       padding: 18px 0;
     }
 
-    .tech-strip {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(132px, 1fr));
-      justify-content: stretch;
-    }
-
     .tech-strip div {
-      min-height: 52px;
-      width: 100%;
+      min-height: 58px;
     }
   }
 
   @media (max-width: 560px) {
-    padding-top: 92px;
+    .quick-facts {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
 
-    h1 {
-      font-size: clamp(38px, 13vw, 52px);
+  @media (max-width: 560px) {
+    .hero-grid {
+      gap: 24px;
     }
 
-    .code-panel {
-      padding: 16px;
+    .hero-copy,
+    h1,
+    p,
+    .hero-actions {
+      max-width: 100%;
+      width: 100%;
+    }
+
+    .quick-facts div {
+      background: rgba(15, 23, 32, 0.62);
+      border: 1px solid rgba(148, 163, 184, 0.12);
+      border-radius: 8px;
+      min-height: 74px;
+      padding: 14px;
+    }
+
+    .tech-strip {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .tech-strip div {
+      min-height: 66px;
+      padding: 12px 10px;
+    }
+  }
+
+  @media (max-width: 560px) {
+    padding-top: 82px;
+
+    .hero-grid {
+      gap: 20px;
+    }
+
+    .eyebrow {
+      font-size: 15px;
+      margin-bottom: 10px;
+    }
+
+    h1 {
+      font-size: clamp(32px, 9.2vw, 40px);
+      line-height: 1.08;
+    }
+
+    h1 strong {
+      font-size: clamp(38px, 10.8vw, 46px);
+      line-height: 1.04;
+      margin-top: 4px;
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 1.72;
+      margin-top: 16px;
+    }
+
+    .hero-actions {
+      gap: 10px;
+      margin-top: 22px;
     }
 
     .hero-actions a {
+      flex: 1 1 100%;
+      min-height: 48px;
       width: 100%;
-      text-align: center;
+    }
+
+    .code-panel {
+      border-radius: 10px;
+      max-height: 260px;
+      overflow: hidden;
+      padding: 12px;
+    }
+
+    .window-dots {
+      gap: 6px;
+      margin-bottom: 10px;
+    }
+
+    .window-dots span {
+      height: 9px;
+      width: 9px;
+    }
+
+    pre {
+      max-height: 232px;
+      overflow: hidden;
     }
 
     code {
-      font-size: 13px;
+      font-size: 12px;
+      line-height: 1.58;
+    }
+  }
+
+  @media (max-width: 420px) {
+    h1 {
+      font-size: clamp(30px, 8.2vw, 33px);
+    }
+
+    h1 strong {
+      font-size: clamp(35px, 9.8vw, 40px);
+    }
+
+    p {
+      font-size: 15.5px;
+      line-height: 1.7;
+    }
+
+    .hero-actions a {
+      min-height: 46px;
+    }
+
+    .code-panel {
+      max-height: 232px;
+    }
+  }
+
+  @media (max-width: 360px) {
+    .quick-facts {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  @media (max-width: 380px) {
+    .tech-strip {
+      grid-template-columns: 1fr;
     }
   }
 `;

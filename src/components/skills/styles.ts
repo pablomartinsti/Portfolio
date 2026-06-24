@@ -24,7 +24,7 @@ export const Container = styled.section`
   .skills-grid {
     display: grid;
     gap: 18px;
-    grid-template-columns: repeat(5, minmax(0, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
   }
 
   article {
@@ -81,15 +81,47 @@ export const Container = styled.section`
     width: 5px;
   }
 
-  @media (max-width: 1120px) {
+  @media (max-width: 1180px) {
     .skills-grid {
-      grid-template-columns: repeat(3, minmax(0, 1fr));
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    article {
+      min-height: auto;
+    }
+
+    h3 {
+      font-size: 19px;
+    }
+
+    li {
+      font-size: 15px;
+      line-height: 1.5;
     }
   }
 
-  @media (max-width: 760px) {
+  @media (max-width: 620px) {
+    padding: 50px 0 30px;
+
+    .section-title {
+      margin-bottom: 22px;
+    }
+
     .skills-grid {
       grid-template-columns: 1fr;
+    }
+
+    article {
+      padding: 24px;
+    }
+
+    h3 {
+      font-size: 20px;
+    }
+
+    li {
+      font-size: 16px;
+      line-height: 1.58;
     }
   }
 `;

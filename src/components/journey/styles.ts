@@ -113,4 +113,21 @@ export const Container = styled.section`
       grid-template-columns: 1fr;
     }
   }
+
+  @media (max-width: 620px) {
+    li strong,
+    article p {
+      font-size: 16px;
+    }
+
+    li p {
+      font-size: 16px;
+      line-height: 1.7;
+    }
+
+    .formation-meta span {
+      font-size: 15px;
+      line-height: 1.55;
+    }
+  }
 `;

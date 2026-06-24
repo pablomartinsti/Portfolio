@@ -5,8 +5,8 @@ import { profile } from '../../data/profile';
 const navItems = [
   ['home', 'Início'],
   ['sobre', 'Sobre mim'],
-  ['portfolio', 'Projetos'],
   ['habilidades', 'Tecnologias'],
+  ['portfolio', 'Projetos'],
   ['jornada', 'Jornada'],
   ['contatos', 'Contato'],
 ];

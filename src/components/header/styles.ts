@@ -67,6 +67,38 @@ export const Container = styled.header`
       display: none;
     }
   }
+
+  @media (max-width: 560px) {
+    gap: 12px;
+    min-height: 66px;
+    padding: 0 14px;
+
+    .brand {
+      gap: 9px;
+      min-width: 0;
+    }
+
+    .brand-mark {
+      font-size: 28px;
+    }
+
+    .brand strong {
+      font-size: 15px;
+      line-height: 1.1;
+      white-space: nowrap;
+    }
+
+    .brand small {
+      font-size: 12px;
+      margin-top: 1px;
+    }
+  }
+
+  @media (max-width: 360px) {
+    .brand small {
+      display: none;
+    }
+  }
 `;
 
 type NavProps = {
@@ -110,6 +142,15 @@ export const Nav = styled.nav<NavProps>`
       padding: 12px;
     }
   }
+
+  @media (max-width: 560px) {
+    top: 74px;
+
+    a {
+      font-size: 16px;
+      padding: 13px;
+    }
+  }
 `;
 
 export const MenuButton = styled.button`
@@ -134,5 +175,10 @@ export const MenuButton = styled.button`
 
   @media (max-width: 1080px) {
     display: inline-flex;
+  }
+
+  @media (max-width: 560px) {
+    height: 40px;
+    width: 40px;
   }
 `;

@@ -13,13 +13,19 @@ export const Container = styled.div`
   overflow-x: hidden;
 
   main {
-    width: min(100% - 40px, 1180px);
+    width: min(100% - 48px, 1180px);
     margin: 0 auto;
+  }
+
+  @media (max-width: 1024px) {
+    main {
+      width: min(100% - 64px, 1180px);
+    }
   }
 
   @media (max-width: 700px) {
     main {
-      width: min(100% - 28px, 1180px);
+      width: min(100% - 32px, 1180px);
     }
   }
 `;
