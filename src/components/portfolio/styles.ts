@@ -317,4 +317,57 @@ export const Section = styled.div`
     li {
       font-size: 15.5px;
     }
+  }
+  /* bigger project cards on responsive */
+  @media (max-width: 1080px) {
+    .section-heading p {
+      font-size: 20px;
+      line-height: 1.7;
+    }
+
+    h3 {
+      font-size: 29px;
+    }
+
+    p {
+      font-size: 20px;
+      line-height: 1.68;
+    }
+
+    li {
+      font-size: 19px;
+      line-height: 1.58;
+    }
+
+    .project-type,
+    .tags span {
+      font-size: 16px;
+    }
+
+    strong {
+      font-size: 18px;
+    }
+  }
+
+  @media (max-width: 700px) {
+    .section-heading p {
+      font-size: 18px;
+    }
+
+    h3 {
+      font-size: 25px;
+    }
+
+    p {
+      font-size: 18px;
+    }
+
+    li {
+      font-size: 17px;
+    }
+
+    .project-type,
+    .tags span {
+      font-size: 14px;
+    }
   }`;

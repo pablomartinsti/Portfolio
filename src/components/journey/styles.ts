@@ -158,4 +158,29 @@ export const Container = styled.section`
       font-size: 16px;
       line-height: 1.62;
     }
+  }
+  /* bigger journey typography */
+  @media (max-width: 1080px) {
+    li strong,
+    article p {
+      font-size: 21px;
+    }
+
+    li p,
+    .formation-meta span {
+      font-size: 20px;
+      line-height: 1.65;
+    }
+  }
+
+  @media (max-width: 700px) {
+    li strong,
+    article p {
+      font-size: 19px;
+    }
+
+    li p,
+    .formation-meta span {
+      font-size: 18px;
+    }
   }`;

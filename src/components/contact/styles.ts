@@ -175,4 +175,37 @@ export const Container = styled.section`
     .contact-list {
       grid-template-columns: 1fr;
     }
+  }
+  /* bigger contact typography */
+  @media (max-width: 1080px) {
+    h2 {
+      font-size: 32px;
+    }
+
+    p,
+    .contact-action {
+      font-size: 20px;
+      line-height: 1.7;
+    }
+
+    .contact-list strong {
+      font-size: 18px;
+    }
+
+    .contact-list small,
+    footer p {
+      font-size: 17px;
+      line-height: 1.6;
+    }
+  }
+
+  @media (max-width: 700px) {
+    h2 {
+      font-size: 29px;
+    }
+
+    p,
+    .contact-action {
+      font-size: 18px;
+    }
   }`;

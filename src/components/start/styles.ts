@@ -552,4 +552,98 @@ export const Container = styled.section`
     .hero-actions a {
       font-size: 16px;
     }
+  }
+  /* bigger responsive typography */
+  @media (max-width: 1080px) {
+    .eyebrow {
+      font-size: 21px;
+    }
+
+    h1 {
+      font-size: 58px;
+      line-height: 1.05;
+    }
+
+    h1 strong {
+      font-size: 62px;
+      line-height: 1.04;
+    }
+
+    p {
+      font-size: 23px;
+      line-height: 1.7;
+    }
+
+    .hero-actions a {
+      font-size: 20px;
+      min-height: 58px;
+    }
+
+    code,
+    .code-panel .language-javascript {
+      font-size: 18px !important;
+      line-height: 1.7;
+    }
+
+    .quick-facts strong {
+      font-size: 20px;
+    }
+
+    .quick-facts span,
+    .tech-strip span {
+      font-size: 18px;
+      line-height: 1.5;
+    }
+  }
+
+  @media (max-width: 700px) {
+    .eyebrow {
+      font-size: 18px;
+    }
+
+    h1 {
+      font-size: 42px;
+    }
+
+    h1 strong {
+      font-size: 46px;
+    }
+
+    p {
+      font-size: 20px;
+      line-height: 1.65;
+    }
+
+    .hero-actions a {
+      font-size: 18px;
+    }
+
+    code,
+    .code-panel .language-javascript {
+      font-size: 15px !important;
+      line-height: 1.55;
+    }
+
+    .quick-facts strong {
+      font-size: 18px;
+    }
+
+    .quick-facts span,
+    .tech-strip span {
+      font-size: 16px;
+    }
+  }
+
+  @media (max-width: 420px) {
+    h1 {
+      font-size: 38px;
+    }
+
+    h1 strong {
+      font-size: 42px;
+    }
+
+    p {
+      font-size: 19px;
+    }
   }`;

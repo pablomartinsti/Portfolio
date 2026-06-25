@@ -221,4 +221,43 @@ export const Container = styled.section`
     .about-copy blockquote {
       font-size: 17px;
     }
-  }`;
+  }
+  /* bigger readable text on small screens */
+  @media (max-width: 1080px) {
+    .about-copy p,
+    .about-copy blockquote {
+      font-size: 21px;
+      line-height: 1.72;
+    }
+
+    .profile-card strong {
+      font-size: 23px;
+    }
+
+    .profile-card span,
+    .highlights span {
+      font-size: 18px;
+      line-height: 1.55;
+    }
+
+    .highlights strong {
+      font-size: 25px;
+    }
+  }
+
+  @media (max-width: 700px) {
+    .about-copy p,
+    .about-copy blockquote {
+      font-size: 19px;
+    }
+
+    .profile-card strong {
+      font-size: 22px;
+    }
+
+    .profile-card span,
+    .highlights span {
+      font-size: 17px;
+    }
+  }
+`;
