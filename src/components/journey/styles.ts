@@ -130,4 +130,32 @@ export const Container = styled.section`
       line-height: 1.55;
     }
   }
-`;
+
+  @media (max-width: 768px) {
+    .section-title span {
+      font-size: 27px;
+    }
+
+    h2 {
+      font-size: 29px;
+    }
+
+    li strong,
+    article p {
+      font-size: 18px;
+    }
+
+    li p {
+      font-size: 17.5px;
+      line-height: 1.72;
+    }
+
+    article h3 {
+      font-size: 23px;
+    }
+
+    .formation-meta span {
+      font-size: 16px;
+      line-height: 1.62;
+    }
+  }`;

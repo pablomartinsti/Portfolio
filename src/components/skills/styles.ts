@@ -124,4 +124,36 @@ export const Container = styled.section`
       line-height: 1.58;
     }
   }
-`;
+
+  @media (max-width: 768px) {
+    .section-title span {
+      font-size: 27px;
+    }
+
+    h2 {
+      font-size: 29px;
+    }
+
+    article {
+      padding: 24px;
+    }
+
+    .skill-icon {
+      font-size: 14px;
+    }
+
+    h3 {
+      font-size: 22px;
+    }
+
+    li {
+      font-size: 17px;
+      line-height: 1.62;
+    }
+  }
+
+  @media (max-width: 420px) {
+    li {
+      font-size: 16.5px;
+    }
+  }`;

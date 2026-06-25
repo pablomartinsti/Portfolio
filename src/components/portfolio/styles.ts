@@ -61,7 +61,21 @@ export const Container = styled.section`
       line-height: 1.2;
     }
   }
-`;
+
+  @media (max-width: 768px) {
+    .section-heading span {
+      font-size: 27px;
+    }
+
+    h2 {
+      font-size: 29px;
+    }
+
+    .section-heading p {
+      font-size: 17px;
+      line-height: 1.72;
+    }
+  }`;
 
 export const Section = styled.div`
   display: grid;
@@ -252,4 +266,55 @@ export const Section = styled.div`
       font-size: 22px;
     }
   }
-`;
+
+  @media (max-width: 768px) {
+    .project-content {
+      gap: 16px;
+      padding: 22px;
+    }
+
+    .project-type {
+      font-size: 14px;
+    }
+
+    h3 {
+      font-size: 24px;
+      line-height: 1.24;
+    }
+
+    p {
+      font-size: 17.5px;
+      line-height: 1.72;
+    }
+
+    li {
+      font-size: 16.5px;
+      line-height: 1.6;
+    }
+
+    .tags span {
+      font-size: 13.5px;
+    }
+
+    strong {
+      font-size: 16px;
+    }
+  }
+
+  @media (max-width: 420px) {
+    .project-content {
+      padding: 20px;
+    }
+
+    h3 {
+      font-size: 23px;
+    }
+
+    p {
+      font-size: 16.5px;
+    }
+
+    li {
+      font-size: 15.5px;
+    }
+  }`;

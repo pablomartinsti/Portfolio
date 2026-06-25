@@ -99,7 +99,22 @@ export const Container = styled.header`
       display: none;
     }
   }
-`;
+
+  @media (max-width: 768px) {
+    .brand strong {
+      font-size: 17px;
+    }
+
+    .brand small {
+      font-size: 13px;
+    }
+  }
+
+  @media (max-width: 420px) {
+    .brand strong {
+      font-size: 16px;
+    }
+  }`;
 
 type NavProps = {
   $isOpen: boolean;

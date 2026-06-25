@@ -141,4 +141,38 @@ export const Container = styled.section`
       line-height: 1.65;
     }
   }
-`;
+
+  @media (max-width: 768px) {
+    .contact-card {
+      grid-template-columns: 1fr;
+    }
+
+    .section-kicker {
+      font-size: 15px;
+    }
+
+    h2 {
+      font-size: 29px;
+    }
+
+    p {
+      font-size: 17.5px;
+      line-height: 1.75;
+    }
+
+    .contact-list strong {
+      font-size: 16px;
+    }
+
+    .contact-list small,
+    footer p {
+      font-size: 15px;
+      line-height: 1.65;
+    }
+  }
+
+  @media (max-width: 520px) {
+    .contact-list {
+      grid-template-columns: 1fr;
+    }
+  }`;

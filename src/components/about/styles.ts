@@ -22,7 +22,7 @@ export const Container = styled.section`
   }
 
   .about-grid {
-    align-items: start;
+    align-items: stretch;
     display: grid;
     gap: 28px;
     grid-template-columns: 220px minmax(0, 1fr) 370px;
@@ -104,7 +104,7 @@ export const Container = styled.section`
 
   .highlights strong {
     color: #39d16a;
-    font-size: 24px;
+    font-size: 20px;
   }
 
   .highlights span {
@@ -152,35 +152,73 @@ export const Container = styled.section`
   }
 
   @media (max-width: 680px) {
-    .highlights {
-      grid-template-columns: 1fr;
+    padding: 44px 0 28px;
+
+    .about-copy p {
+      font-size: 20px;
+      line-height: 1.78;
+    }
+    .about-copy blockquote {
+      font-size: 20px;
+      line-height: 1.75;
     }
     .profile-card strong {
       font-size: 25px;
     }
 
     .profile-card span {
-      font-size: 20px;
-    }
-    padding: 44px 0 28px;
-
-    .profile-card strong {
-      font-size: 30px;
-    }
-
-    .profile-card span {
-      font-size: 20px;
-    }
-
-    .about-copy p,
-    blockquote {
-      font-size: 16px;
-      line-height: 1.75;
-    }
-
-    .highlights span {
       font-size: 15px;
+    }
+
+    .highlights {
+      grid-template-columns: 1fr;
+    }
+    .highlights strong {
+      font-size: 25px;
+    }
+    .highlights span {
+      font-size: 20px;
       line-height: 1.55;
     }
   }
-`;
+
+  @media (max-width: 768px) {
+    .section-title span {
+      font-size: 27px;
+    }
+
+    h2 {
+      font-size: 29px;
+    }
+
+    .profile-card strong {
+      font-size: 20px;
+    }
+
+    .profile-card span {
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    .about-copy p,
+    .about-copy blockquote {
+      font-size: 18px;
+      line-height: 1.78;
+    }
+
+    .highlights strong {
+      font-size: 22px;
+    }
+
+    .highlights span {
+      font-size: 17px;
+      line-height: 1.58;
+    }
+  }
+
+  @media (max-width: 420px) {
+    .about-copy p,
+    .about-copy blockquote {
+      font-size: 17px;
+    }
+  }`;
