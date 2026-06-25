@@ -260,4 +260,41 @@ export const Container = styled.section`
       font-size: 17px;
     }
   }
-`;
+
+  /* extra larger about typography */
+  @media (max-width: 1080px) {
+    .about-copy p,
+    .about-copy blockquote {
+      font-size: 23px;
+      line-height: 1.68;
+    }
+
+    .profile-card strong {
+      font-size: 25px;
+    }
+
+    .profile-card span,
+    .highlights span {
+      font-size: 20px;
+    }
+
+    .highlights strong {
+      font-size: 27px;
+    }
+  }
+
+  @media (max-width: 700px) {
+    .about-copy p,
+    .about-copy blockquote {
+      font-size: 20px;
+    }
+
+    .profile-card strong {
+      font-size: 23px;
+    }
+
+    .profile-card span,
+    .highlights span {
+      font-size: 18px;
+    }
+  }`;

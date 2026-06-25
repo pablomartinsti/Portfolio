@@ -183,4 +183,29 @@ export const Container = styled.section`
     .formation-meta span {
       font-size: 18px;
     }
+  }
+  /* extra larger journey typography */
+  @media (max-width: 1080px) {
+    li strong,
+    article p {
+      font-size: 23px;
+    }
+
+    li p,
+    .formation-meta span {
+      font-size: 22px;
+      line-height: 1.58;
+    }
+  }
+
+  @media (max-width: 700px) {
+    li strong,
+    article p {
+      font-size: 20px;
+    }
+
+    li p,
+    .formation-meta span {
+      font-size: 19px;
+    }
   }`;

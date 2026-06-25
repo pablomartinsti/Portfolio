@@ -208,4 +208,36 @@ export const Container = styled.section`
     .contact-action {
       font-size: 18px;
     }
+  }
+  /* extra larger contact typography */
+  @media (max-width: 1080px) {
+    h2 {
+      font-size: 34px;
+    }
+
+    p,
+    .contact-action {
+      font-size: 22px;
+      line-height: 1.62;
+    }
+
+    .contact-list strong {
+      font-size: 20px;
+    }
+
+    .contact-list small,
+    footer p {
+      font-size: 18px;
+    }
+  }
+
+  @media (max-width: 700px) {
+    h2 {
+      font-size: 31px;
+    }
+
+    p,
+    .contact-action {
+      font-size: 19px;
+    }
   }`;

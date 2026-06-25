@@ -646,4 +646,93 @@ export const Container = styled.section`
     p {
       font-size: 19px;
     }
+  }
+  /* extra larger responsive typography */
+  @media (max-width: 1080px) {
+    .eyebrow {
+      font-size: 23px;
+    }
+
+    h1 {
+      font-size: 62px;
+    }
+
+    h1 strong {
+      font-size: 66px;
+    }
+
+    p {
+      font-size: 25px;
+      line-height: 1.68;
+    }
+
+    .hero-actions a {
+      font-size: 22px;
+      min-height: 62px;
+    }
+
+    code,
+    .code-panel .language-javascript {
+      font-size: 19px !important;
+    }
+
+    .quick-facts strong {
+      font-size: 22px;
+    }
+
+    .quick-facts span,
+    .tech-strip span {
+      font-size: 20px;
+    }
+  }
+
+  @media (max-width: 700px) {
+    .eyebrow {
+      font-size: 19px;
+    }
+
+    h1 {
+      font-size: 44px;
+    }
+
+    h1 strong {
+      font-size: 48px;
+    }
+
+    p {
+      font-size: 21px;
+    }
+
+    .hero-actions a {
+      font-size: 19px;
+      min-height: 56px;
+    }
+
+    code,
+    .code-panel .language-javascript {
+      font-size: 16px !important;
+    }
+
+    .quick-facts strong {
+      font-size: 19px;
+    }
+
+    .quick-facts span,
+    .tech-strip span {
+      font-size: 17px;
+    }
+  }
+
+  @media (max-width: 420px) {
+    h1 {
+      font-size: 39px;
+    }
+
+    h1 strong {
+      font-size: 43px;
+    }
+
+    p {
+      font-size: 20px;
+    }
   }`;

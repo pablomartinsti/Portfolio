@@ -177,4 +177,25 @@ export const Container = styled.section`
     li {
       font-size: 18px;
     }
+  }
+  /* extra larger skills typography */
+  @media (max-width: 1080px) {
+    h3 {
+      font-size: 27px;
+    }
+
+    li {
+      font-size: 22px;
+      line-height: 1.55;
+    }
+  }
+
+  @media (max-width: 700px) {
+    h3 {
+      font-size: 24px;
+    }
+
+    li {
+      font-size: 19px;
+    }
   }`;

@@ -370,4 +370,55 @@ export const Section = styled.div`
     .tags span {
       font-size: 14px;
     }
+  }
+  /* extra larger project typography */
+  @media (max-width: 1080px) {
+    .section-heading p {
+      font-size: 22px;
+    }
+
+    h3 {
+      font-size: 31px;
+    }
+
+    p {
+      font-size: 22px;
+      line-height: 1.62;
+    }
+
+    li {
+      font-size: 21px;
+      line-height: 1.52;
+    }
+
+    .project-type,
+    .tags span {
+      font-size: 17px;
+    }
+
+    strong {
+      font-size: 20px;
+    }
+  }
+
+  @media (max-width: 700px) {
+    .section-heading p {
+      font-size: 19px;
+    }
+
+    h3 {
+      font-size: 27px;
+    }
+
+    p {
+      font-size: 19px;
+    }
+
+    li {
+      font-size: 18px;
+    }
+
+    strong {
+      font-size: 18px;
+    }
   }`;
