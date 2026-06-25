@@ -208,4 +208,15 @@ export const Container = styled.section`
     .formation-meta span {
       font-size: 19px;
     }
-  }`;
+  }
+  /* stack journey content on mobile */
+  @media (max-width: 700px) {
+    .journey {
+      grid-template-columns: 1fr;
+    }
+
+    article {
+      width: 100%;
+    }
+  }
+`;

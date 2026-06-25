@@ -421,4 +421,59 @@ export const Section = styled.div`
     strong {
       font-size: 18px;
     }
+  }
+  /* stronger mobile project readability */
+  @media (max-width: 700px) {
+    .project-content {
+      gap: 18px;
+      padding: 24px;
+    }
+
+    .project-type {
+      font-size: 16px;
+      padding: 8px 10px;
+    }
+
+    h3 {
+      font-size: 30px;
+      line-height: 1.18;
+    }
+
+    p {
+      font-size: 21px;
+      line-height: 1.58;
+    }
+
+    li {
+      font-size: 20px;
+      line-height: 1.5;
+      padding-left: 12px;
+    }
+
+    .tags span {
+      font-size: 15px;
+      padding: 7px 9px;
+    }
+
+    strong {
+      font-size: 19px;
+    }
+  }
+
+  @media (max-width: 420px) {
+    .project-content {
+      padding: 22px;
+    }
+
+    h3 {
+      font-size: 28px;
+    }
+
+    p {
+      font-size: 20px;
+    }
+
+    li {
+      font-size: 19px;
+    }
   }`;
