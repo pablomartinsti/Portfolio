@@ -3,7 +3,7 @@ import { Container, Nav, MenuButton } from './styles';
 import { profile } from '../../data/profile';
 
 const navItems = [
-  ['home', 'Início'],
+  ['home', 'Inicio'],
   ['sobre', 'Sobre mim'],
   ['habilidades', 'Tecnologias'],
   ['portfolio', 'Projetos'],
@@ -18,27 +18,46 @@ function Header() {
   const closeMenu = () => setIsOpen(false);
 
   useEffect(() => {
-    const sections = navItems
-      .map(([id]) => document.getElementById(id))
-      .filter((section): section is HTMLElement => Boolean(section));
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY;
+      const windowHeight = window.innerHeight;
+      const documentHeight = document.documentElement.scrollHeight;
 
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            setActiveSection(entry.target.id);
-          }
-        });
-      },
-      {
-        threshold: 0.35,
-        rootMargin: '-120px 0px -45% 0px',
+      const isAtBottom = scrollPosition + windowHeight >= documentHeight - 20;
+
+      if (isAtBottom) {
+        setActiveSection('contatos');
+        return;
       }
-    );
 
-    sections.forEach((section) => observer.observe(section));
+      if (scrollPosition < 80) {
+        setActiveSection('home');
+        return;
+      }
 
-    return () => observer.disconnect();
+      const currentSection = navItems.reduce((current, [id]) => {
+        const section = document.getElementById(id);
+
+        if (!section) {
+          return current;
+        }
+
+        const sectionTop = section.offsetTop - 130;
+
+        if (scrollPosition >= sectionTop) {
+          return id;
+        }
+
+        return current;
+      }, 'home');
+
+      setActiveSection(currentSection);
+    };
+
+    handleScroll();
+    window.addEventListener('scroll', handleScroll, { passive: true });
+
+    return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
   return (
@@ -51,7 +70,7 @@ function Header() {
         </span>
       </a>
 
-      <Nav $isOpen={isOpen}>
+      <Nav id="main-navigation" $isOpen={isOpen}>
         {navItems.map(([id, label]) => (
           <a
             key={id}
@@ -61,6 +80,7 @@ function Header() {
               closeMenu();
             }}
             className={activeSection === id ? 'active' : ''}
+            aria-current={activeSection === id ? 'page' : undefined}
           >
             {label}
           </a>
@@ -76,6 +96,7 @@ function Header() {
         onClick={() => setIsOpen((current) => !current)}
         aria-label={isOpen ? 'Fechar menu' : 'Abrir menu'}
         aria-expanded={isOpen}
+        aria-controls="main-navigation"
       >
         <span />
         <span />
