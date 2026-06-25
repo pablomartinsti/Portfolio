@@ -1,24 +1,24 @@
 import styled from 'styled-components';
 
 export const Container = styled.header`
-  width: 100%;
-  min-height: 76px;
+  align-items: center;
   background: rgba(7, 11, 15, 0.88);
-  border-bottom: 1px solid rgba(148, 163, 184, 0.14);
   backdrop-filter: blur(18px);
+  border-bottom: 1px solid rgba(148, 163, 184, 0.14);
+  display: grid;
+  gap: 22px;
+  grid-template-columns: minmax(210px, 1fr) auto auto;
+  min-height: 76px;
+  padding: 0 max(24px, calc((100vw - 1180px) / 2));
   position: fixed;
   top: 0;
+  width: 100%;
   z-index: 1000;
-  display: grid;
-  grid-template-columns: minmax(210px, 1fr) auto auto;
-  align-items: center;
-  gap: 22px;
-  padding: 0 max(24px, calc((100vw - 1180px) / 2));
 
   .brand {
+    align-items: center;
     color: #f8fafc;
     display: inline-flex;
-    align-items: center;
     gap: 12px;
     text-decoration: none;
   }
@@ -68,6 +68,12 @@ export const Container = styled.header`
     }
   }
 
+  @media (max-width: 768px) {
+    .brand strong {
+      font-size: 17px;
+    }
+  }
+
   @media (max-width: 560px) {
     gap: 12px;
     min-height: 66px;
@@ -83,13 +89,13 @@ export const Container = styled.header`
     }
 
     .brand strong {
-      font-size: 15px;
+      font-size: 16px;
       line-height: 1.1;
       white-space: nowrap;
     }
 
     .brand small {
-      font-size: 12px;
+      font-size: 13px;
       margin-top: 1px;
     }
   }
@@ -99,30 +105,15 @@ export const Container = styled.header`
       display: none;
     }
   }
-
-  @media (max-width: 768px) {
-    .brand strong {
-      font-size: 17px;
-    }
-
-    .brand small {
-      font-size: 13px;
-    }
-  }
-
-  @media (max-width: 420px) {
-    .brand strong {
-      font-size: 16px;
-    }
-  }`;
+`;
 
 type NavProps = {
   $isOpen: boolean;
 };
 
 export const Nav = styled.nav<NavProps>`
-  display: flex;
   align-items: center;
+  display: flex;
   gap: 6px;
 
   a {
@@ -142,16 +133,16 @@ export const Nav = styled.nav<NavProps>`
   }
 
   @media (max-width: 1080px) {
-    position: absolute;
-    left: 14px;
-    right: 14px;
-    top: 86px;
     background: #0d141c;
     border: 1px solid rgba(148, 163, 184, 0.18);
     border-radius: 8px;
-    display: ${({ $isOpen }) => ($isOpen ? 'grid' : 'none')};
-    padding: 12px;
     box-shadow: 0 24px 50px rgba(0, 0, 0, 0.35);
+    display: ${({ $isOpen }) => ($isOpen ? 'grid' : 'none')};
+    left: 14px;
+    padding: 12px;
+    position: absolute;
+    right: 14px;
+    top: 86px;
 
     a {
       padding: 12px;
@@ -169,23 +160,23 @@ export const Nav = styled.nav<NavProps>`
 `;
 
 export const MenuButton = styled.button`
-  display: none;
-  width: 42px;
-  height: 42px;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.03);
   border: 1px solid rgba(148, 163, 184, 0.22);
   border-radius: 8px;
-  background: rgba(255, 255, 255, 0.03);
-  align-items: center;
-  justify-content: center;
+  cursor: pointer;
+  display: none;
   flex-direction: column;
   gap: 5px;
-  cursor: pointer;
+  height: 42px;
+  justify-content: center;
+  width: 42px;
 
   span {
-    width: 20px;
-    height: 2px;
     background: #f8fafc;
     border-radius: 2px;
+    height: 2px;
+    width: 20px;
   }
 
   @media (max-width: 1080px) {

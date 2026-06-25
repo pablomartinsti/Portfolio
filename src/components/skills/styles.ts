@@ -89,39 +89,16 @@ export const Container = styled.section`
     article {
       min-height: auto;
     }
-
-    h3 {
-      font-size: 19px;
-    }
-
-    li {
-      font-size: 15px;
-      line-height: 1.5;
-    }
   }
 
-  @media (max-width: 620px) {
-    padding: 50px 0 30px;
-
-    .section-title {
-      margin-bottom: 22px;
-    }
-
-    .skills-grid {
-      grid-template-columns: 1fr;
-    }
-
-    article {
-      padding: 24px;
-    }
-
+  @media (max-width: 1080px) {
     h3 {
-      font-size: 20px;
+      font-size: 27px;
     }
 
     li {
-      font-size: 16px;
-      line-height: 1.58;
+      font-size: 22px;
+      line-height: 1.55;
     }
   }
 
@@ -141,53 +118,6 @@ export const Container = styled.section`
     .skill-icon {
       font-size: 14px;
     }
-
-    h3 {
-      font-size: 22px;
-    }
-
-    li {
-      font-size: 17px;
-      line-height: 1.62;
-    }
-  }
-
-  @media (max-width: 420px) {
-    li {
-      font-size: 16.5px;
-    }
-  }
-  /* bigger skills typography */
-  @media (max-width: 1080px) {
-    h3 {
-      font-size: 25px;
-    }
-
-    li {
-      font-size: 20px;
-      line-height: 1.6;
-    }
-  }
-
-  @media (max-width: 700px) {
-    h3 {
-      font-size: 23px;
-    }
-
-    li {
-      font-size: 18px;
-    }
-  }
-  /* extra larger skills typography */
-  @media (max-width: 1080px) {
-    h3 {
-      font-size: 27px;
-    }
-
-    li {
-      font-size: 22px;
-      line-height: 1.55;
-    }
   }
 
   @media (max-width: 700px) {
@@ -198,4 +128,17 @@ export const Container = styled.section`
     li {
       font-size: 19px;
     }
-  }`;
+  }
+
+  @media (max-width: 620px) {
+    padding: 50px 0 30px;
+
+    .section-title {
+      margin-bottom: 22px;
+    }
+
+    .skills-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+`;

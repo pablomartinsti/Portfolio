@@ -108,83 +108,6 @@ export const Container = styled.section`
     padding: 12px;
   }
 
-  @media (max-width: 880px) {
-    .journey {
-      grid-template-columns: 1fr;
-    }
-  }
-
-  @media (max-width: 620px) {
-    li strong,
-    article p {
-      font-size: 16px;
-    }
-
-    li p {
-      font-size: 16px;
-      line-height: 1.7;
-    }
-
-    .formation-meta span {
-      font-size: 15px;
-      line-height: 1.55;
-    }
-  }
-
-  @media (max-width: 768px) {
-    .section-title span {
-      font-size: 27px;
-    }
-
-    h2 {
-      font-size: 29px;
-    }
-
-    li strong,
-    article p {
-      font-size: 18px;
-    }
-
-    li p {
-      font-size: 17.5px;
-      line-height: 1.72;
-    }
-
-    article h3 {
-      font-size: 23px;
-    }
-
-    .formation-meta span {
-      font-size: 16px;
-      line-height: 1.62;
-    }
-  }
-  /* bigger journey typography */
-  @media (max-width: 1080px) {
-    li strong,
-    article p {
-      font-size: 21px;
-    }
-
-    li p,
-    .formation-meta span {
-      font-size: 20px;
-      line-height: 1.65;
-    }
-  }
-
-  @media (max-width: 700px) {
-    li strong,
-    article p {
-      font-size: 19px;
-    }
-
-    li p,
-    .formation-meta span {
-      font-size: 18px;
-    }
-  }
-  /* extra larger journey typography */
   @media (max-width: 1080px) {
     li strong,
     article p {
@@ -198,7 +121,35 @@ export const Container = styled.section`
     }
   }
 
+  @media (max-width: 880px) {
+    .journey {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .section-title span {
+      font-size: 27px;
+    }
+
+    h2 {
+      font-size: 29px;
+    }
+
+    article h3 {
+      font-size: 23px;
+    }
+  }
+
   @media (max-width: 700px) {
+    .journey {
+      grid-template-columns: 1fr;
+    }
+
+    article {
+      width: 100%;
+    }
+
     li strong,
     article p {
       font-size: 20px;
@@ -207,16 +158,6 @@ export const Container = styled.section`
     li p,
     .formation-meta span {
       font-size: 19px;
-    }
-  }
-  /* stack journey content on mobile */
-  @media (max-width: 700px) {
-    .journey {
-      grid-template-columns: 1fr;
-    }
-
-    article {
-      width: 100%;
     }
   }
 `;

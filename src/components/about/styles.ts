@@ -118,11 +118,6 @@ export const Container = styled.section`
       grid-template-columns: 220px minmax(0, 1fr);
     }
 
-    .about-copy p {
-      font-size: 17px;
-      line-height: 1.78;
-    }
-
     .highlights {
       grid-column: 1 / -1;
       grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -131,6 +126,28 @@ export const Container = styled.section`
     .highlights div {
       grid-template-columns: 1fr;
       text-align: center;
+    }
+  }
+
+  @media (max-width: 1080px) {
+    .about-copy p,
+    .about-copy blockquote {
+      font-size: 23px;
+      line-height: 1.68;
+    }
+
+    .profile-card strong {
+      font-size: 25px;
+    }
+
+    .profile-card span,
+    .highlights span {
+      font-size: 20px;
+      line-height: 1.55;
+    }
+
+    .highlights strong {
+      font-size: 27px;
     }
   }
 
@@ -151,37 +168,6 @@ export const Container = styled.section`
     }
   }
 
-  @media (max-width: 680px) {
-    padding: 44px 0 28px;
-
-    .about-copy p {
-      font-size: 20px;
-      line-height: 1.78;
-    }
-    .about-copy blockquote {
-      font-size: 20px;
-      line-height: 1.75;
-    }
-    .profile-card strong {
-      font-size: 25px;
-    }
-
-    .profile-card span {
-      font-size: 15px;
-    }
-
-    .highlights {
-      grid-template-columns: 1fr;
-    }
-    .highlights strong {
-      font-size: 25px;
-    }
-    .highlights span {
-      font-size: 20px;
-      line-height: 1.55;
-    }
-  }
-
   @media (max-width: 768px) {
     .section-title span {
       font-size: 27px;
@@ -190,103 +176,15 @@ export const Container = styled.section`
     h2 {
       font-size: 29px;
     }
-
-    .profile-card strong {
-      font-size: 20px;
-    }
-
-    .profile-card span {
-      font-size: 16px;
-      line-height: 1.6;
-    }
-
-    .about-copy p,
-    .about-copy blockquote {
-      font-size: 18px;
-      line-height: 1.78;
-    }
-
-    .highlights strong {
-      font-size: 22px;
-    }
-
-    .highlights span {
-      font-size: 17px;
-      line-height: 1.58;
-    }
-  }
-
-  @media (max-width: 420px) {
-    .about-copy p,
-    .about-copy blockquote {
-      font-size: 17px;
-    }
-  }
-  /* bigger readable text on small screens */
-  @media (max-width: 1080px) {
-    .about-copy p,
-    .about-copy blockquote {
-      font-size: 21px;
-      line-height: 1.72;
-    }
-
-    .profile-card strong {
-      font-size: 23px;
-    }
-
-    .profile-card span,
-    .highlights span {
-      font-size: 18px;
-      line-height: 1.55;
-    }
-
-    .highlights strong {
-      font-size: 25px;
-    }
   }
 
   @media (max-width: 700px) {
-    .about-copy p,
-    .about-copy blockquote {
-      font-size: 19px;
-    }
+    padding: 44px 0 28px;
 
-    .profile-card strong {
-      font-size: 22px;
-    }
-
-    .profile-card span,
-    .highlights span {
-      font-size: 17px;
-    }
-  }
-
-  /* extra larger about typography */
-  @media (max-width: 1080px) {
-    .about-copy p,
-    .about-copy blockquote {
-      font-size: 23px;
-      line-height: 1.68;
-    }
-
-    .profile-card strong {
-      font-size: 25px;
-    }
-
-    .profile-card span,
-    .highlights span {
-      font-size: 20px;
-    }
-
-    .highlights strong {
-      font-size: 27px;
-    }
-  }
-
-  @media (max-width: 700px) {
     .about-copy p,
     .about-copy blockquote {
       font-size: 20px;
+      line-height: 1.7;
     }
 
     .profile-card strong {
@@ -297,4 +195,9 @@ export const Container = styled.section`
     .highlights span {
       font-size: 18px;
     }
-  }`;
+
+    .highlights {
+      grid-template-columns: 1fr;
+    }
+  }
+`;

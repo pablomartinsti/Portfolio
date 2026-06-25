@@ -42,9 +42,30 @@ export const Container = styled.section`
     }
 
     .section-heading p {
-      font-size: 16px;
-      line-height: 1.75;
       max-width: 760px;
+    }
+  }
+
+  @media (max-width: 1080px) {
+    .section-heading p {
+      font-size: 22px;
+      line-height: 1.62;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .section-heading span {
+      font-size: 27px;
+    }
+
+    h2 {
+      font-size: 29px;
+    }
+  }
+
+  @media (max-width: 700px) {
+    .section-heading p {
+      font-size: 19px;
     }
   }
 
@@ -61,21 +82,7 @@ export const Container = styled.section`
       line-height: 1.2;
     }
   }
-
-  @media (max-width: 768px) {
-    .section-heading span {
-      font-size: 27px;
-    }
-
-    h2 {
-      font-size: 29px;
-    }
-
-    .section-heading p {
-      font-size: 17px;
-      line-height: 1.72;
-    }
-  }`;
+`;
 
 export const Section = styled.div`
   display: grid;
@@ -215,168 +222,9 @@ export const Section = styled.div`
       gap: 16px;
       padding: 24px;
     }
-
-    h3 {
-      font-size: 24px;
-      line-height: 1.25;
-    }
-
-    p {
-      font-size: 16px;
-      line-height: 1.75;
-    }
-
-    li {
-      font-size: 15px;
-      line-height: 1.6;
-    }
-
-    .project-type,
-    .tags span {
-      font-size: 13px;
-    }
-
-    strong {
-      font-size: 15px;
-    }
   }
 
-  @media (max-width: 980px) {
-    .project-card {
-      display: flex;
-    }
-
-    .project-media {
-      aspect-ratio: 16 / 9;
-      border-bottom: 1px solid rgba(148, 163, 184, 0.12);
-      border-right: 0;
-      height: auto;
-      min-height: 0;
-    }
-  }
-
-  @media (max-width: 520px) {
-    gap: 18px;
-
-    .project-content {
-      padding: 20px;
-    }
-
-    h3 {
-      font-size: 22px;
-    }
-  }
-
-  @media (max-width: 768px) {
-    .project-content {
-      gap: 16px;
-      padding: 22px;
-    }
-
-    .project-type {
-      font-size: 14px;
-    }
-
-    h3 {
-      font-size: 24px;
-      line-height: 1.24;
-    }
-
-    p {
-      font-size: 17.5px;
-      line-height: 1.72;
-    }
-
-    li {
-      font-size: 16.5px;
-      line-height: 1.6;
-    }
-
-    .tags span {
-      font-size: 13.5px;
-    }
-
-    strong {
-      font-size: 16px;
-    }
-  }
-
-  @media (max-width: 420px) {
-    .project-content {
-      padding: 20px;
-    }
-
-    h3 {
-      font-size: 23px;
-    }
-
-    p {
-      font-size: 16.5px;
-    }
-
-    li {
-      font-size: 15.5px;
-    }
-  }
-  /* bigger project cards on responsive */
   @media (max-width: 1080px) {
-    .section-heading p {
-      font-size: 20px;
-      line-height: 1.7;
-    }
-
-    h3 {
-      font-size: 29px;
-    }
-
-    p {
-      font-size: 20px;
-      line-height: 1.68;
-    }
-
-    li {
-      font-size: 19px;
-      line-height: 1.58;
-    }
-
-    .project-type,
-    .tags span {
-      font-size: 16px;
-    }
-
-    strong {
-      font-size: 18px;
-    }
-  }
-
-  @media (max-width: 700px) {
-    .section-heading p {
-      font-size: 18px;
-    }
-
-    h3 {
-      font-size: 25px;
-    }
-
-    p {
-      font-size: 18px;
-    }
-
-    li {
-      font-size: 17px;
-    }
-
-    .project-type,
-    .tags span {
-      font-size: 14px;
-    }
-  }
-  /* extra larger project typography */
-  @media (max-width: 1080px) {
-    .section-heading p {
-      font-size: 22px;
-    }
-
     h3 {
       font-size: 31px;
     }
@@ -401,28 +249,20 @@ export const Section = styled.div`
     }
   }
 
-  @media (max-width: 700px) {
-    .section-heading p {
-      font-size: 19px;
+  @media (max-width: 980px) {
+    .project-card {
+      display: flex;
     }
 
-    h3 {
-      font-size: 27px;
-    }
-
-    p {
-      font-size: 19px;
-    }
-
-    li {
-      font-size: 18px;
-    }
-
-    strong {
-      font-size: 18px;
+    .project-media {
+      aspect-ratio: 16 / 9;
+      border-bottom: 1px solid rgba(148, 163, 184, 0.12);
+      border-right: 0;
+      height: auto;
+      min-height: 0;
     }
   }
-  /* stronger mobile project readability */
+
   @media (max-width: 700px) {
     .project-content {
       gap: 18px;
@@ -476,4 +316,5 @@ export const Section = styled.div`
     li {
       font-size: 19px;
     }
-  }`;
+  }
+`;

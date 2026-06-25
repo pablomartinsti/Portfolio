@@ -116,100 +116,6 @@ export const Container = styled.section`
     max-width: 100%;
   }
 
-  @media (max-width: 768px) {
-    .contact-list {
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-
-    p {
-      font-size: 16px;
-      line-height: 1.75;
-    }
-
-    .contact-action {
-      font-size: 16px;
-      width: 100%;
-    }
-
-    .contact-list strong {
-      font-size: 15px;
-    }
-
-    .contact-list small,
-    footer p {
-      font-size: 14px;
-      line-height: 1.65;
-    }
-  }
-
-  @media (max-width: 768px) {
-    .contact-card {
-      grid-template-columns: 1fr;
-    }
-
-    .section-kicker {
-      font-size: 15px;
-    }
-
-    h2 {
-      font-size: 29px;
-    }
-
-    p {
-      font-size: 17.5px;
-      line-height: 1.75;
-    }
-
-    .contact-list strong {
-      font-size: 16px;
-    }
-
-    .contact-list small,
-    footer p {
-      font-size: 15px;
-      line-height: 1.65;
-    }
-  }
-
-  @media (max-width: 520px) {
-    .contact-list {
-      grid-template-columns: 1fr;
-    }
-  }
-  /* bigger contact typography */
-  @media (max-width: 1080px) {
-    h2 {
-      font-size: 32px;
-    }
-
-    p,
-    .contact-action {
-      font-size: 20px;
-      line-height: 1.7;
-    }
-
-    .contact-list strong {
-      font-size: 18px;
-    }
-
-    .contact-list small,
-    footer p {
-      font-size: 17px;
-      line-height: 1.6;
-    }
-  }
-
-  @media (max-width: 700px) {
-    h2 {
-      font-size: 29px;
-    }
-
-    p,
-    .contact-action {
-      font-size: 18px;
-    }
-  }
-  /* extra larger contact typography */
   @media (max-width: 1080px) {
     h2 {
       font-size: 34px;
@@ -231,6 +137,20 @@ export const Container = styled.section`
     }
   }
 
+  @media (max-width: 768px) {
+    .contact-card {
+      grid-template-columns: 1fr;
+    }
+
+    .section-kicker {
+      font-size: 15px;
+    }
+
+    .contact-list {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+
   @media (max-width: 700px) {
     h2 {
       font-size: 31px;
@@ -241,15 +161,10 @@ export const Container = styled.section`
       font-size: 19px;
     }
   }
-  /* contact links two columns on mobile */
-  @media (max-width: 700px) {
-    .contact-list {
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-  }
 
   @media (max-width: 360px) {
     .contact-list {
       grid-template-columns: 1fr;
     }
-  }`;
+  }
+`;
