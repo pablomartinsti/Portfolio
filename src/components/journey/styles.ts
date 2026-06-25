@@ -83,7 +83,7 @@ export const Container = styled.section`
 
   article h3 {
     color: #f8fafc;
-    font-size: 22px;
+    font-size: 15px;
     line-height: 1.3;
   }
 
@@ -111,12 +111,12 @@ export const Container = styled.section`
   @media (max-width: 1080px) {
     li strong,
     article p {
-      font-size: 23px;
+      font-size: 16px;
     }
 
     li p,
     .formation-meta span {
-      font-size: 22px;
+      font-size: 15px;
       line-height: 1.58;
     }
   }
@@ -129,15 +129,15 @@ export const Container = styled.section`
 
   @media (max-width: 768px) {
     .section-title span {
-      font-size: 27px;
+      font-size: 22px;
     }
 
     h2 {
-      font-size: 29px;
+      font-size: 24px;
     }
 
     article h3 {
-      font-size: 23px;
+      font-size: 16px;
     }
   }
 
@@ -152,12 +152,12 @@ export const Container = styled.section`
 
     li strong,
     article p {
-      font-size: 20px;
+      font-size: 16px;
     }
 
     li p,
     .formation-meta span {
-      font-size: 19px;
+      font-size: 15px;
     }
   }
 `;

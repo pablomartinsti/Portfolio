@@ -12,7 +12,7 @@ export const Container = styled.section`
 
   .section-title span {
     color: #39d16a;
-    font-size: 25px;
+    font-size: 15px;
     font-weight: 900;
   }
 
@@ -104,7 +104,7 @@ export const Container = styled.section`
 
   .highlights strong {
     color: #39d16a;
-    font-size: 20px;
+    font-size: 15px;
   }
 
   .highlights span {
@@ -132,22 +132,22 @@ export const Container = styled.section`
   @media (max-width: 1080px) {
     .about-copy p,
     .about-copy blockquote {
-      font-size: 23px;
+      font-size: 17px;
       line-height: 1.68;
     }
 
     .profile-card strong {
-      font-size: 25px;
+      font-size: 15px;
     }
 
     .profile-card span,
     .highlights span {
-      font-size: 20px;
+      font-size: 15px;
       line-height: 1.55;
     }
 
     .highlights strong {
-      font-size: 27px;
+      font-size: 22px;
     }
   }
 
@@ -170,11 +170,11 @@ export const Container = styled.section`
 
   @media (max-width: 768px) {
     .section-title span {
-      font-size: 27px;
+      font-size: 22px;
     }
 
     h2 {
-      font-size: 29px;
+      font-size: 24px;
     }
   }
 
@@ -183,17 +183,17 @@ export const Container = styled.section`
 
     .about-copy p,
     .about-copy blockquote {
-      font-size: 20px;
+      font-size: 15px;
       line-height: 1.7;
     }
 
     .profile-card strong {
-      font-size: 23px;
+      font-size: 17px;
     }
 
     .profile-card span,
     .highlights span {
-      font-size: 18px;
+      font-size: 15px;
     }
 
     .highlights {

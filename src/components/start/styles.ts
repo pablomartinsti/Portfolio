@@ -261,21 +261,21 @@ export const Container = styled.section`
     }
 
     .eyebrow {
-      font-size: 23px;
+      font-size: 18px;
     }
 
     h1 {
-      font-size: 62px;
+      font-size: 52px;
       line-height: 1.05;
     }
 
     h1 strong {
-      font-size: 66px;
+      font-size: 56px;
       line-height: 1.04;
     }
 
     p {
-      font-size: 25px;
+      font-size: 18px;
       line-height: 1.68;
     }
 
@@ -285,7 +285,7 @@ export const Container = styled.section`
 
     .hero-actions a {
       flex: 1 1 150px;
-      font-size: 22px;
+      font-size: 16px;
       min-height: 62px;
       text-align: center;
     }
@@ -297,12 +297,12 @@ export const Container = styled.section`
       width: 100%;
 
       .language-javascript {
-        font-size: 19px !important;
+        font-size: 15px !important;
       }
     }
 
     code {
-      font-size: 19px;
+      font-size: 15px;
       line-height: 1.7;
     }
 
@@ -315,12 +315,12 @@ export const Container = styled.section`
     }
 
     .quick-facts strong {
-      font-size: 22px;
+      font-size: 16px;
     }
 
     .quick-facts span,
     .tech-strip span {
-      font-size: 20px;
+      font-size: 14px;
       line-height: 1.5;
     }
   }
@@ -343,39 +343,39 @@ export const Container = styled.section`
 
   @media (max-width: 700px) {
     .eyebrow {
-      font-size: 19px;
+      font-size: 15px;
     }
 
     h1 {
-      font-size: 44px;
+      font-size: 38px;
     }
 
     h1 strong {
-      font-size: 48px;
+      font-size: 42px;
     }
 
     p {
-      font-size: 21px;
+      font-size: 16px;
       line-height: 1.65;
     }
 
     .hero-actions a {
-      font-size: 19px;
+      font-size: 15px;
       min-height: 56px;
     }
 
     code,
     .code-panel .language-javascript {
-      font-size: 16px !important;
+      font-size: 13px !important;
     }
 
     .quick-facts strong {
-      font-size: 19px;
+      font-size: 15px;
     }
 
     .quick-facts span,
     .tech-strip span {
-      font-size: 17px;
+      font-size: 14px;
     }
   }
 
@@ -436,7 +436,7 @@ export const Container = styled.section`
     }
 
     .quick-facts {
-      grid-template-columns: repeat(2, minmax(0, 1fr));
+      grid-template-columns: repeat(1, minmax(0, 1fr));
     }
 
     .quick-facts div {
@@ -459,15 +459,15 @@ export const Container = styled.section`
 
   @media (max-width: 420px) {
     h1 {
-      font-size: 39px;
+      font-size: 34px;
     }
 
     h1 strong {
-      font-size: 43px;
+      font-size: 38px;
     }
 
     p {
-      font-size: 20px;
+      font-size: 14px;
     }
 
     .code-panel {

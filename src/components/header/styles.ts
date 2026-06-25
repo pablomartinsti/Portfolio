@@ -70,7 +70,7 @@ export const Container = styled.header`
 
   @media (max-width: 768px) {
     .brand strong {
-      font-size: 17px;
+      font-size: 15px;
     }
   }
 
@@ -89,7 +89,7 @@ export const Container = styled.header`
     }
 
     .brand strong {
-      font-size: 16px;
+      font-size: 14px;
       line-height: 1.1;
       white-space: nowrap;
     }
@@ -153,7 +153,7 @@ export const Nav = styled.nav<NavProps>`
     top: 74px;
 
     a {
-      font-size: 16px;
+      font-size: 14px;
       padding: 13px;
     }
   }

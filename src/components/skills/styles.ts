@@ -93,22 +93,22 @@ export const Container = styled.section`
 
   @media (max-width: 1080px) {
     h3 {
-      font-size: 27px;
+      font-size: 20px;
     }
 
     li {
-      font-size: 22px;
+      font-size: 16px;
       line-height: 1.55;
     }
   }
 
   @media (max-width: 768px) {
     .section-title span {
-      font-size: 27px;
+      font-size: 20px;
     }
 
     h2 {
-      font-size: 29px;
+      font-size: 24px;
     }
 
     article {
@@ -122,11 +122,11 @@ export const Container = styled.section`
 
   @media (max-width: 700px) {
     h3 {
-      font-size: 24px;
+      font-size: 19px;
     }
 
     li {
-      font-size: 19px;
+      font-size: 15px;
     }
   }
 

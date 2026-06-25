@@ -118,22 +118,22 @@ export const Container = styled.section`
 
   @media (max-width: 1080px) {
     h2 {
-      font-size: 34px;
+      font-size: 28px;
     }
 
     p,
     .contact-action {
-      font-size: 22px;
+      font-size: 16px;
       line-height: 1.62;
     }
 
     .contact-list strong {
-      font-size: 20px;
+      font-size: 15px;
     }
 
     .contact-list small,
     footer p {
-      font-size: 18px;
+      font-size: 14px;
     }
   }
 
@@ -153,16 +153,16 @@ export const Container = styled.section`
 
   @media (max-width: 700px) {
     h2 {
-      font-size: 31px;
+      font-size: 26px;
     }
 
     p,
     .contact-action {
-      font-size: 19px;
+      font-size: 15px;
     }
   }
 
-  @media (max-width: 360px) {
+  @media (max-width: 480px) {
     .contact-list {
       grid-template-columns: 1fr;
     }

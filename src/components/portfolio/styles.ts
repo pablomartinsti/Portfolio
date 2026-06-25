@@ -25,12 +25,12 @@ export const Container = styled.section`
 
   h2 {
     color: #f8fafc;
-    font-size: 28px;
+    font-size: 16px;
   }
 
   .section-heading p {
     color: #a8b3c2;
-    font-size: 15px;
+    font-size: 12px;
     line-height: 1.65;
   }
 
@@ -48,7 +48,7 @@ export const Container = styled.section`
 
   @media (max-width: 1080px) {
     .section-heading p {
-      font-size: 22px;
+      font-size: 16px;
       line-height: 1.62;
     }
   }
@@ -65,7 +65,7 @@ export const Container = styled.section`
 
   @media (max-width: 700px) {
     .section-heading p {
-      font-size: 19px;
+      font-size: 14px;
     }
   }
 
@@ -156,7 +156,7 @@ export const Section = styled.div`
 
   h3 {
     color: #f8fafc;
-    font-size: 22px;
+    font-size: 16px;
     line-height: 1.2;
   }
 
@@ -226,26 +226,26 @@ export const Section = styled.div`
 
   @media (max-width: 1080px) {
     h3 {
-      font-size: 31px;
+      font-size: 24px;
     }
 
     p {
-      font-size: 22px;
+      font-size: 16px;
       line-height: 1.62;
     }
 
     li {
-      font-size: 21px;
+      font-size: 12px;
       line-height: 1.52;
     }
 
     .project-type,
     .tags span {
-      font-size: 17px;
+      font-size: 13px;
     }
 
     strong {
-      font-size: 20px;
+      font-size: 12px;
     }
   }
 
@@ -270,33 +270,33 @@ export const Section = styled.div`
     }
 
     .project-type {
-      font-size: 16px;
+      font-size: 13px;
       padding: 8px 10px;
     }
 
     h3 {
-      font-size: 30px;
+      font-size: 23px;
       line-height: 1.18;
     }
 
     p {
-      font-size: 21px;
+      font-size: 12px;
       line-height: 1.58;
     }
 
     li {
-      font-size: 20px;
+      font-size: 12px;
       line-height: 1.5;
       padding-left: 12px;
     }
 
     .tags span {
-      font-size: 15px;
+      font-size: 12px;
       padding: 7px 9px;
     }
 
     strong {
-      font-size: 19px;
+      font-size: 14px;
     }
   }
 
@@ -306,15 +306,15 @@ export const Section = styled.div`
     }
 
     h3 {
-      font-size: 28px;
+      font-size: 16px;
     }
 
     p {
-      font-size: 20px;
+      font-size: 12px;
     }
 
     li {
-      font-size: 19px;
+      font-size: 14px;
     }
   }
 `;
