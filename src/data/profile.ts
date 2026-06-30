@@ -1,4 +1,4 @@
-import ProfilePhoto from '../assets/profile-placeholder.svg';
+import ProfilePhoto from '../assets/profile.png';
 
 // Campos vazios ficam escondidos na tela até você preencher.
 // Para usar uma foto real: coloque a imagem em src/assets e troque o import acima.

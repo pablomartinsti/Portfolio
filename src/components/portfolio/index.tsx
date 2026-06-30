@@ -3,8 +3,7 @@ import { Container, Section } from './styles';
 import Modal from '../Modal';
 
 import MartirPonto from '../../assets/martir-ponto.png';
-import MartirPontoVideo from '../../assets/martir-ponto.mp4';
-import IgrejaGestTec from '../../assets/igrejagesttec-preview.png';
+import IgrejaGestTec from '../../assets/igrejagesttec.png';
 import ApiNotaFiscal from '../../assets/api-nota-fiscal-case.svg';
 
 type Project = {
@@ -22,7 +21,7 @@ type Project = {
 const projects: Project[] = [
   {
     image: IgrejaGestTec,
-    type: 'Sistema de gestão',
+    type: 'Sistema de Gestão',
     title: 'IgrejaGestTec',
     summary:
       'Sistema financeiro e espiritual para igrejas com dashboard, cultos, transações, categorias e relatórios.',
@@ -60,7 +59,7 @@ const projects: Project[] = [
   },
   {
     image: ApiNotaFiscal,
-    type: 'API backend',
+    type: 'API Nota Fiscal',
     title: 'API de NFS-e',
     summary:
       'API SaaS multiempresa para gestão e emissão simulada/fiscal de notas de serviço.',
@@ -96,8 +95,7 @@ const projects: Project[] = [
   },
   {
     image: MartirPonto,
-    video: MartirPontoVideo,
-    type: 'Produto completo',
+    type: 'Ponto Digital',
     title: 'Martir Ponto Digital',
     summary:
       'Sistema de controle de ponto com dashboard web, app mobile, geolocalização, autenticação e relatórios.',
@@ -124,7 +122,6 @@ const projects: Project[] = [
       </div>
     ),
     links: [
-      ['Acessar deploy', 'https://pontodigital.martircontabil.com.br/'],
       [
         'GitHub Backend',
         'https://github.com/pablomartinsti/martir-ponto-digital-backend',
